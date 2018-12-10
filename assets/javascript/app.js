@@ -10,52 +10,52 @@ $(document).ready(function() {
         var questions = {
             q1: {
                 question: '<br>1. <em>"Frankly, my dear, I do not give a damn."</em> Which movie was this quote from?',
-                answer: [" The Searchers", " Gone with the Wind", " Rebecca", " Casablanca", " Die Hard"],
+                answer: [" The Searchers", " Gone with the Wind", " Rebecca", " Casino", " Die Hard"],
                 correct: " Gone with the Wind"
             },
             q2: {
                 question: '<br>2. <em>"They call me Mister Tibbs!"</em> Which movie was this quote from?',
-                answer: [" In the Heat of the Night", " Do the Right Thing", " To Sir, with Love", " On the Waterfront", " Rebecca"],
+                answer: [" In the Heat of the Night", " Do the Right Thing", " To Sir, with Love", " On the Waterfront", " The Others"],
                 correct: " In the Heat of the Night"
             },
             q3: {
                 question: '<br>3. <em>"Made it, Ma! Top of the world!"</em> Which movie was this quote from?',
-                answer: [" White Heat", " Goodfellas", " Little Caesar", " In the Heat of the Night", " The Godfather"],
+                answer: [" White Heat", " Goodfellas", " Little Caesar", " Insidious", " The Sixth Sense"],
                 correct: " White Heat"
             },
             q4: {
                 question: '<br>4. <em>"May the Force be with you."</em> Which movie was this quote from?',
-                answer: [" Star Trek", " Back to the Future", " Key Largo", " The Matrix", " Star Wars"],
+                answer: [" Star Trek", " Back to the Future", " Big", " Forrest Gump", " Star Wars"],
                 correct: " Star Wars"
             },
             q5: {
                 question: '<br>5. <em>"Here is looking at you, kid."</em> Which movie was this quote from?',
-                answer: [" The Maltese Falcon", " Key Largo", " The Matrix", " The Big Sleep", " Casablanca"],
+                answer: [" Metropolis", " Key Largo", " Frankenstein", " The Big Sleep", " Casablanca"],
                 correct: " Casablanca"
             },
             q6: {
-                question: '<br>6. <em>"You can not handle the truth!"</em> Which movie was this quote from?',
-                answer: [" The Matrix", " The Godfather", " A Few Good Men", " Tootsie", " The Maltese Falcon"],
-                correct: " A Few Good Men"
+                question: '<br>6. <em>"I am going to make him an offer he cannot refuse!"</em> Which movie was this quote from?',
+                answer: [" The Shining", " The Godfather", " Five Easy Pieces", " Tootsie", " One Flew Over the Cuckoos Nest"],
+                correct: " The Godfather"
             },
             q7: {
                 question: '<br>7. <em>"Love means never having to say you are sorry."</em> Which movie was this quote from?',
-                answer: [" The Notebook", " Casablanca", " Love Story", " Gone with the Wind", " A Few Good Men"],
+                answer: [" It is Alive", " Bride of Frankenstien", " Love Story", " Wall Street", " Paranormal Activity"],
                 correct: " Love Story"
             },
             q8: {
                 question: '<br>8. <em>"Oh, Jerry, don not let us ask for the moon. We have the stars."</em> Which movie was this quote from?',
-                answer: [" Dark Victory", " Mildred Pierce", " All About Eve", " The Notebook", " Now, Voyager"],
+                answer: [" Dark Victory", " Jaws", " All About Eve", " The Notebook", " Now, Voyager"],
                 correct: " Now, Voyager"
             },
             q9: {
                 question: '<br>9. <em>"The stuff that dreams are made of."</em> Which movie was this quote from?',
-                answer: [" The Wizard of Oz", " The Matrix", " The Natural", " The Maltese Falcon", " Mildred Pierce"],
+                answer: [" The Wizard of Oz", " The Matrix", " In the Heart of the Sea", " The Maltese Falcon", " Mildred Pierce"],
                 correct: " The Maltese Falcon"
             },
             q10: {
                 question: '<br>10. <em> "Today, I consider myself the luckiest man on the face of the earth."</em> Which movie was this quote from?',
-                answer: [" The Maltese Falcon", " The Natural", " The Pride of the Yankees", " Bull Durham", " A Few Good Men"],
+                answer: [" The Perfect Storm", " The Natural", " The Pride of the Yankees", " Bull Durham", " A Few Good Men"],
                 correct: " A Few Good Men"
             },
 
@@ -129,6 +129,12 @@ $(document).ready(function() {
             skippedNo = qArray.length - userArray.length;
             wrongNo = qArray.length - correctNo - skippedNo;
 
+            console.log(correctNo);
+            console.log(skippedNo);
+            console.log(wrongNo);
+
+            console.log(qArray);
+            console.log(userArray);
 
             //result page
             $("#questionSite").empty();
