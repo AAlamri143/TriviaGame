@@ -5,5 +5,8 @@ trivia game that shows only one question until the player answers it or their ti
 URL: [https://aalamri143.github.io/TriviaGame/](https://aalamri143.github.io/TriviaGame/)
 
 # Technologies
-HTML, CSS, Bootstrap
-JavaScript and jQuery
+* HTML
+* CSS
+* Bootstrap
+* JavaScript
+* jQuery
